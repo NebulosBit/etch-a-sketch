@@ -37,6 +37,12 @@
   background-color: #5a6268;
 }
 
+.screen{
+  display: grid;
+  height:500px;
+  width: 500px;
+}
+
 form{
   align-items: center;
   display: flex;
