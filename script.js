@@ -10,5 +10,11 @@ function createGrid(size) {
   }
 }
 
-grid = 16
+grid = 16;
 createGrid(grid);
+
+screen.addEventListener("mouseover", (e) => {
+  if (e.target.classList.contains("square")){
+    e.target.style.backgroundColor = "black";
+  }
+})
