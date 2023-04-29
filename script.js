@@ -1,5 +1,6 @@
 const screen = document.querySelector(".screen");
 const resetBtn = document.querySelector("#reset");
+const userColor = document.getElementById("userColor")
 
 function createGrid(size) {
   screen.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -16,7 +17,7 @@ createGrid(grid);
 
 screen.addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("square")) {
-    e.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = userColor.value;
   }
 });
 
